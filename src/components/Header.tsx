@@ -1,13 +1,13 @@
+import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
 
-import Icon from '../assets/logo-new-removebg-preview.png';
-
 
 interface HeaderProps {
+    icon: React.ReactNode,
     title?: string;
     navItems: {
         name: string,
@@ -18,16 +18,17 @@ interface HeaderProps {
 
 function Header(props: HeaderProps) {
     const {
+        icon,
         title,
         navItems
     } = props;
 
 
     return (
-        <AppBar position='static'>
+        <AppBar sx={{ width: '100%', background: 'none' }}>
             <Toolbar>
                 <IconButton edge="start">
-                    <img src={Icon} alt="Elevate 9 Header Icon" />
+                    {icon}
                 </IconButton>
                 <Typography variant="h6" sx={{ flexGrow: 1 }}>
                     {title}

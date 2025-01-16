@@ -1,7 +1,9 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import Icon from './assets/logo-new-removebg-preview.png';
 
 
 const navItems = [
@@ -27,7 +29,10 @@ const navItems = [
 const Layout: React.FC = () => {
     return (
         <>
-            <Header navItems={navItems} />
+            <Header
+                icon={(<img src={Icon} />)}
+                navItems={navItems}
+            />
             <main>
                 <Outlet />
             </main>
