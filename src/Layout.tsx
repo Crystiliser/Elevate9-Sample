@@ -45,7 +45,7 @@ const Layout: React.FC = () => {
                 <Outlet />
             </main>
             <Footer
-              icon={(<img src={FooterLogo} alt="Elevate 9 Logo" />)}
+              icon={(<img src={FooterLogo} height={120} width={120} alt="Elevate 9 Logo" />)}
               name={name}
               phone={phone}
               email={email}
