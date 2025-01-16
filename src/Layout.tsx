@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import HeaderLogo from './assets/logo-new-removebg-preview.png';
 import FooterLogo from './assets/logo-embossed.png';
 
+import './Layout.css';
+
 
 const navItems = [
     {
