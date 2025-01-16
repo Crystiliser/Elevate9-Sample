@@ -1,6 +1,7 @@
-import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
-import { Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+
+import FooterImage from '../assets/footer-1-blue.jpg';
 
 
 interface FooterProps {
@@ -15,6 +16,14 @@ interface FooterProps {
 }
 
 
+const GridContainerStyle = {
+    width: '100%',
+    padding: 4,
+    backgroundImage: `url(${FooterImage})`,
+    color: '#fff'
+};
+
+
 function Footer(props: FooterProps) {
 
     const {
@@ -27,7 +36,7 @@ function Footer(props: FooterProps) {
 
 
     return (
-        <Grid container sx={{ width: '100%', padding: 4 }}>
+        <Grid container sx={GridContainerStyle}>
             <Grid size={3} sx={{ paddingLeft: 10 }}>
                 {icon}
             </Grid>
