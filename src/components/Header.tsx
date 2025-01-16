@@ -1,9 +1,10 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import Toolbar from '@mui/material/Toolbar';
 
 import Icon from '../assets/logo-new-removebg-preview.png';
-import { IconButton, Toolbar } from '@mui/material';
 
 
 interface HeaderProps {
