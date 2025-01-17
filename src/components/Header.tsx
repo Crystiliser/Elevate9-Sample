@@ -27,7 +27,7 @@ function Header(props: HeaderProps) {
 
 
     return (
-        <AppBar position={isFixed ? 'fixed' : 'sticky'} sx={{ width: '100%', background: 'rgb(35, 52, 82)' }}>
+        <AppBar position={isFixed ? 'fixed' : 'sticky'} sx={{ width: '100%', background: 'none' }}>
             <Toolbar>
                 <IconButton edge="start">
                     {icon}
