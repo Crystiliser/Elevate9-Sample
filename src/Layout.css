@@ -18,9 +18,11 @@ header {
 
 main {
     flex: 1;
-    min-height: 400px;
+    min-height: 82vh;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 footer {
-    padding: 10px;
+    min-height: 18vh;
 }
