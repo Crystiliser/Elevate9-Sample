@@ -12,7 +12,8 @@ interface HeaderProps {
     navItems: {
         name: string,
         link: string
-    }[]
+    }[],
+    isFixed?: boolean
 }
 
 
@@ -20,12 +21,13 @@ function Header(props: HeaderProps) {
     const {
         icon,
         title,
-        navItems
+        navItems,
+        isFixed = false
     } = props;
 
 
     return (
-        <AppBar sx={{ width: '100%', background: 'none' }}>
+        <AppBar position={isFixed ? 'fixed' : 'sticky'} sx={{ width: '100%', background: 'rgb(35, 52, 82)' }}>
             <Toolbar>
                 <IconButton edge="start">
                     {icon}
