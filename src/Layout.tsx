@@ -40,6 +40,7 @@ const Layout: React.FC = () => {
             <Header
                 icon={(<img src={HeaderLogo} height={121} width={147} alt="Elevate9 Logo" />)}
                 navItems={navItems}
+                isFixed
             />
             <main>
                 <Outlet />
